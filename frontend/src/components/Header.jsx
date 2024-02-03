@@ -17,13 +17,13 @@ function Header() {
             </form>
             <ul className='flex gap-4'>
             <Link to='/'>
-                <li className='hidden sm:inline text-[#8eb5d1] hover:underline cursor-pointer'>Home</li>
+                <li className='hidden sm:inline text-[#abcae0] hover:underline cursor-pointer'>Home</li>
             </Link>
             <Link to='/about'>
-                <li className='hidden sm:inline text-[#8eb5d1] hover:underline cursor-pointer'>About</li>
+                <li className='hidden sm:inline text-[#abcae0] hover:underline cursor-pointer'>About</li>
             </Link>
             <Link to='/sign-in'>
-                <li className='sm:inline text-[#8eb5d1] hover:underline cursor-pointer'>Sign in</li>
+                <li className='sm:inline text-[#abcae0] hover:underline cursor-pointer'>Sign in</li>
             </Link>
             </ul>
         

@@ -15,7 +15,11 @@ function Header() {
             </h1>
             </Link>
             <form className='bg-slate-100 p-3 rounded-lg flex items-center'>
-                <input type="text" placeholder='Search...' className='bg-transparent focus:outline-none w-24 sm:w-64' />
+                <input 
+                    type="text" 
+                    placeholder='Search...' 
+                    className='bg-transparent focus:outline-none w-24 sm:w-64' 
+                />
                 <FaSearch className='text-slate-500' />
             </form>
             <ul className='flex gap-4'>
@@ -33,7 +37,7 @@ function Header() {
                 alt='profile'
               />
             ) : (
-              <li className=' text-slate-700 hover:underline'> Sign in</li>
+              <li className=' text-[#abcae0] hover:underline'> Sign in</li>
             )}
           </Link>
             </ul>

@@ -27,8 +27,8 @@ To get started with the Real Estate Application, follow these steps:
 3. Install dependencies using npm install.
 4. Set up your MongoDB database and update the connection string in the configuration file.
 5. Configure Firebase and Google OAuth authentication.
-6. Start the server using npm start.
-7. Navigate to the frontend directory and start the React application using npm start.
+6. Start the server using npm run dev.
+7. Navigate to the frontend directory and start the React application using npm run dev.
 8. Access the application in your browser at http://localhost:3000.
 
 ##Contributing

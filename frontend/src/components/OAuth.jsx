@@ -1,7 +1,7 @@
 
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase/firebase';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { signInSuccess } from '../redux/user/userSlice';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ const OAuth = () => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { loading, error } = useSelector(state => state.user);
 
     const handleGoogleClick = async () => {
         try {
@@ -35,7 +36,7 @@ const OAuth = () => {
         }
     }
   return (
-    <button onClick={handleGoogleClick} type='button' className='bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
+    <button disabled={loading} onClick={handleGoogleClick} type='button' className='bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
       Continue with Google
     </button>
   )

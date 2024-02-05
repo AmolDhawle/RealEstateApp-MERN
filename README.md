@@ -31,7 +31,4 @@ To get started with the Real Estate Application, follow these steps:
 7. Navigate to the frontend directory and start the React application using npm run dev.
 8. Access the application in your browser at http://localhost:5173.
 
-## Contributing
-Contributions to the Real Estate Application are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes.
-
 
